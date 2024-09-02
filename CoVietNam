@@ -8,7 +8,7 @@ screen.bgcolor("white")
 t = turtle.Turtle()
 t.speed(3)
 
-# Vẽ nền cờ (màu đỏ)
+# Vẽ nền cờ màu đỏ
 t.penup()
 t.goto(-150, 100)
 t.pendown()
