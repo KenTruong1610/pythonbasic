@@ -1,0 +1,36 @@
+import turtle
+
+# Tạo màn hình
+screen = turtle.Screen()
+screen.bgcolor("white")
+
+# Tạo đối tượng turtle
+t = turtle.Turtle()
+t.speed(3)
+
+# Vẽ nền cờ (màu đỏ)
+t.penup()
+t.goto(-150, 100)
+t.pendown()
+t.begin_fill()
+t.color("red")
+for _ in range(2):
+    t.forward(300)
+    t.right(90)
+    t.forward(200)
+    t.right(90)
+t.end_fill()
+
+# Vẽ ngôi sao vàng
+t.penup()
+t.goto(-50, 12)
+t.pendown()
+t.begin_fill()
+t.color("yellow")
+for _ in range(5):
+    t.forward(100)
+    t.right(144)
+t.end_fill()
+
+t.hideturtle()
+screen.mainloop()
